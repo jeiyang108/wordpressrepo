@@ -6,13 +6,8 @@
 ?>
 
 <section class="row">
-    <div class="c2">
-        <figure class="thumb">
-            <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"><?php 
-if ( has_post_thumbnail() ) : the_post_thumbnail( 'listing-thumbnail' ); else : ?><?php $urlimg = get_template_directory_uri() . '/include/images/default-thumb.png'; ?><img src="<?php echo esc_url($urlimg); ?>" title="<?php the_title(); ?>" /><?php endif; ?></a>
-        </figure>
-    </div>
-        <div class="c10">
+
+        <div class="c12">
             <header>		
                 <h2 class="entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
             </header>

@@ -6,7 +6,7 @@
 get_header(); ?>
 
 <section class="row">
-    <article id="content" class="c8" role="main">
+    <article id="content" class="c12" role="main">
 
         <?php $options = get_option( 'larryslist_theme_options' ); 
         if (!empty( $options['larryslist_newtitle']) ) { echo '<h2 class="alt-title">' . esc_attr($options['larryslist_newtitle']) . '</h2>'; ?>
@@ -25,11 +25,7 @@ get_header(); ?>
             <?php endif; ?>
 
     </article>
-        <div class="c4 end">
 
-            <?php get_sidebar(); ?>
-
-        </div>
 </section>
 
     <?php get_footer(); ?>
