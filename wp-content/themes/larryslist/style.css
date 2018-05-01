@@ -1,3 +1,10 @@
+/* Customized */
+nav.c12 {
+    background-color: #2F4454 !important;
+}
+.site-description {
+    color: #87bbbc;
+}
 /*
 Theme Name: LarrysList
 Description: Larrys List is a directory or classified ads theme. Built on a Responsive framework, makes it perfect for mobile, tablets and desktop. Main listing page will show a set number for latest listings. Listings show only on template "View Listing" and custom category pages, while blog posts show on your assign blog page. Category and Archive search are separate from blog and listings search. Options and features include Background, Header change; Custom-Default sidebar widget, shows Custom Categories and a login box; Set number of listings to show on page;  Other features included are Email and social media links; Change anchor links colors; Remove and add new text to footer; Members have their own Dashboard with listing stats; Pop-up for images of listing thumb-nail.  Basic demo at http://sunlandcomputers.com/larryslist/
@@ -21,6 +28,8 @@ Sidebar Styles
 Comments
 Widgets
 */
+
+
 
 * {margin:0;padding:0;}
 
@@ -165,7 +174,8 @@ ol li {
     display:         block;
 }
 #masthead {
-    background:      #f3f3f3;
+    background:      #2F4454;
+    background-color: #2F4454;
     height:          150px;
     padding-left:    2em
 }
@@ -202,9 +212,9 @@ header.row {
     padding:         0 1.em;
 }
 #footer {
-    border-top:      1px dotted #bbb;
+
     box-shadow:      0 -1px 1px #555;
-    background:      #15292c;
+    background:      #2F4454;
     border-left:     thin solid #8c8c8c;
     border-right:    thin solid #7a7a7a;
     padding:         1.em;
@@ -337,7 +347,7 @@ header.row {
 /* This class is added to menu item which has sub-items */
 #access li.current-menu-item a,
 #access li.current_page_item a {
-    color:           #adf;
+    color:           #DA7B93;
 }
 /* other navigation */
 .navigation p {
@@ -422,7 +432,7 @@ body.blog .navigation ol {
 .site-title, .site-title a, .site-title a:visited {
     text-decoration: none;
     text-shadow:     -1px 1px 1px #80b7df;
-    color:           #41616c;
+    color:           #fff;
 }
 .site-description {
     margin-bottom:   0;
