@@ -1,16 +1,23 @@
 <!DOCTYPE html>
+
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|PT+Serif|Vidaloka" rel="stylesheet">
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<div id="wrapper">
+<div id="wrapper content-background">
     <header class="row">
         <section id="masthead" class="c12" role="banner">
             <div class="hgroup">
+                
+                <!-- Site logo image -->
+                <img src="<?php echo get_template_directory_uri() . '/img/logo.png'; ?>" />
+
                 <h1 class="site-title"><a href="<?php esc_url(home_url('/')); ?>/"><?php bloginfo('name'); ?></a></h1>
                 <h2 class="site-description"><?php bloginfo('description'); ?></h2>
             </div>

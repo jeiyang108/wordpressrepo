@@ -1,10 +1,88 @@
-/* Customized */
+/* Customized header (General)*/
 nav.c12 {
-    background-color: #2F4454 !important;
+    background-color: #2B2B2B !important;
+    /*box-shadow: 0px 10px 5px #121010;*/
+    box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-family: 'Cinzel', cursive;
 }
 .site-description {
-    color: #87bbbc;
+    color: #fff;
 }
+
+/* Customized page (General)*/
+.entry-title {
+    font-family: 'PT Serif', serif;
+    font-size: 36px;
+} 
+.entry-title a {
+    color: #B0976D !important;
+    text-shadow: 3px 3px 5px #4B3524;
+}
+
+/* Account  */
+.um-account-side li {
+    background: #c4b193 !important;
+}
+
+/* Member-related Plug-ins */
+/* Button color */
+.um .um-tip:hover, .um .um-field-radio.active:not(.um-field-radio-state-disabled) i, 
+.um .um-field-checkbox.active:not(.um-field-radio-state-disabled) i, .um .um-member-name a:hover, 
+.um .um-member-more a:hover, .um .um-member-less a:hover, .um .um-members-pagi a:hover, .um .um-cover-add:hover, 
+.um .um-profile-subnav a.active, .um .um-item-meta a, .um-account-name a:hover, .um-account-nav a.current, 
+.um-account-side li a.current span.um-account-icon, .um-account-side li a.current:hover span.um-account-icon, 
+.um-dropdown li a:hover, i.um-active-color, span.um-active-color {
+    color: #4d87b7 !important;
+}
+
+.um input[type=submit].um-button, .um input[type=submit].um-button:focus, 
+.um a.um-button, .um a.um-button.um-disabled:hover, .um a.um-button.um-disabled:focus, .um a.um-button.um-disabled:active {
+    background: #4d87b7 !important;
+}
+
+
+.um .um-field-group-head, .picker__box, 
+.picker__nav--prev:hover, .picker__nav--next:hover, .um .um-members-pagi span.current, 
+.um .um-members-pagi span.current:hover, .um .um-profile-nav-item.active a, 
+.um .um-profile-nav-item.active a:hover, .upload, .um-modal-header, .um-modal-btn, 
+.um-modal-btn.disabled, .um-modal-btn.disabled:hover, div.uimob800 .um-account-side li a.current, 
+div.uimob800 .um-account-side li a.current:hover {
+    background: #4d87b7 !important;
+}
+
+/* Members page 'Edit profile' button font color*/
+.um .um-button.um-alt, .um input[type=submit].um-button.um-alt {
+    color: #fff !important;
+}
+
+
+/* Calendar page */
+
+/* buttons */
+.fc-state-default, a.fc-state-default {
+    background-color: #815E38 !important;
+}
+/* active button */
+.fc-button.fc-state-active {
+    box-shadow: none;
+    background-color: #4B3524 !important;
+}
+
+/* Calendar - even rows */
+tr:nth-of-type(even) {
+    background: #d7e3ea !important;
+}
+
+/* Calendar - today */
+.fullCalendar .fc-state-highlight, .fullCalendar table tr:hover td.fc-state-highlight {
+    background: #d6c8b6 !important;
+}
+
+/* Title of the calendar */
+.fc-header-center .fc-header-title {
+    position: unset !important;
+}
+
 /*
 Theme Name: LarrysList
 Description: Larrys List is a directory or classified ads theme. Built on a Responsive framework, makes it perfect for mobile, tablets and desktop. Main listing page will show a set number for latest listings. Listings show only on template "View Listing" and custom category pages, while blog posts show on your assign blog page. Category and Archive search are separate from blog and listings search. Options and features include Background, Header change; Custom-Default sidebar widget, shows Custom Categories and a login box; Set number of listings to show on page;  Other features included are Email and social media links; Change anchor links colors; Remove and add new text to footer; Members have their own Dashboard with listing stats; Pop-up for images of listing thumb-nail.  Basic demo at http://sunlandcomputers.com/larryslist/
@@ -98,6 +176,8 @@ body {
 font-size:   100%;
 line-height: 1.6875;
 font-family: Arial, ‘Helvetica Neue’, Helvetica, sans-serif;
+font-family: 'PT Serif', serif;
+
 }
 
 .grid{ margin:0 auto; max-width:1200px; width:100%}
@@ -174,8 +254,7 @@ ol li {
     display:         block;
 }
 #masthead {
-    background:      #2F4454;
-    background-color: #2F4454;
+    background-color: #2B2B2B;
     height:          150px;
     padding-left:    2em
 }
@@ -197,12 +276,20 @@ header.row {
 }
 #content {
 /* individual posts */
-    background:      #fafafa;
+    
+background: -moz-linear-gradient(125deg, rgba(32,32,33,1) 0%, rgba(106,100,93,1) 100%);
+background: -webkit-linear-gradient(125deg, rgba(32,32,33,1) 0%, rgba(106,100,93,1) 100%);
+background: -o-linear-gradient(125deg, rgba(32,32,33,1) 0%, rgba(106,100,93,1) 100%);
+background: -ms-linear-gradient(125deg, rgba(32,32,33,1) 0%, rgba(106,100,93,1) 100%);
+background: linear-gradient(325deg, rgba(32,32,33,1) 0%, rgba(106,100,93,1) 100%);
     position:        relative;
     padding:         0.212em 1.533em;
-    border-top:      1px dotted #aaa;
+
     min-height:      320px;
 }
+
+
+
 
 /* Right Sidebar */
 #right-sidebar {
@@ -213,10 +300,6 @@ header.row {
 }
 #footer {
 
-    box-shadow:      0 -1px 1px #555;
-    background:      #2F4454;
-    border-left:     thin solid #8c8c8c;
-    border-right:    thin solid #7a7a7a;
     padding:         1.em;
     color:           #fafafa;
     position:        relative;
@@ -238,8 +321,7 @@ header.row {
     background:      #ffffff; /* helps opacity bleed */
 }
 #access {
-    background:      #15292c;
-    height:          auto;
+
 }
 #logo-right {
     position:        relative;
@@ -347,7 +429,7 @@ header.row {
 /* This class is added to menu item which has sub-items */
 #access li.current-menu-item a,
 #access li.current_page_item a {
-    color:           #DA7B93;
+    color:           #C9A056;
 }
 /* other navigation */
 .navigation p {
@@ -431,8 +513,8 @@ body.blog .navigation ol {
 }
 .site-title, .site-title a, .site-title a:visited {
     text-decoration: none;
-    text-shadow:     -1px 1px 1px #80b7df;
-    color:           #fff;
+    text-shadow:     -1px 1px 1px #4B3524;
+    color:           #C9A056;
 }
 .site-description {
     margin-bottom:   0;
@@ -586,8 +668,8 @@ div.blurb {
 img { max-width: 100% !important; }
 p, h1, h2, h3, h4, h5, h6{ margin: 5px 0 13px 0; padding: 0; }
 h1, h2, h3, h4, h5, h6 { position: relative; }
-h1{ font-size: 190%; }
-h2{ font-size: 160%; }
+h1{ font-size: 200%; }
+h2{ font-size: 180%; }
 h3{ font-size: 120%; }
 h4{ font-size: 110%; }
 h5{ font-size: 100%; }
@@ -629,8 +711,9 @@ small { font-size: 10px; color: #777; padding-left: 1em; }
     border-bottom:   1px solid #bbb;
     min-height:      66px;
     margin:          0;
-    padding:         .322em 1.582em;
+    padding:         1.582em;
     width:           99.444%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .article-entry p {
     font-size:       90%;

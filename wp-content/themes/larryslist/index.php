@@ -8,9 +8,9 @@ get_header(); ?>
 <section class="row">
     <article id="content" class="c12" role="main">
 
-        <?php $options = get_option( 'larryslist_theme_options' ); 
-        if (!empty( $options['larryslist_newtitle']) ) { echo '<h2 class="alt-title">' . esc_attr($options['larryslist_newtitle']) . '</h2>'; ?>
-        <?php } ?>
+            <?php $options = get_option( 'larryslist_theme_options' ); 
+            if (!empty( $options['larryslist_newtitle']) ) { echo '<h2 class="alt-title">' . esc_attr($options['larryslist_newtitle']) . '</h2>'; ?>
+            <?php } ?>
 
             <?php if ( have_posts() ) : ?>
             <?php while ( have_posts() ) : the_post(); ?>

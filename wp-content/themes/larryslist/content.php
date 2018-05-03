@@ -16,9 +16,6 @@ if (have_posts()) : ?>
                         <?php the_content(); ?>
                             <div class="pagedlink"><?php wp_link_pages(); ?></div>
 
-                                <div class="meta-data">
-                                    <p class="cat-link"><?php esc_html_e( 'Filed under: ', 'larryslist' ); ?> - <?php the_category(',') ?> - <?php the_tags() ?> - <span class="authorlinks"><?php the_author() ?></span> @ <?php the_date() ?> <span class="edit-link"><?php edit_post_link(__('Edit', 'larryslist' ) ); ?></p>
-                                </div>
                 </article>
             </div>
 				 
